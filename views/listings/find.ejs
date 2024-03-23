@@ -1,0 +1,17 @@
+<% layout("/layout/boilerplate") -%>
+<a href="/listings" class="btn btn-danger mt-3 mb-3">Back to Home</a>
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+    <% for(let find of findListing){ %>
+        <a href="/listings/<%= find._id %>" class="linsting-link">
+            <div class="card listing-card" style="width: 24rem;">
+                <img src="<%= find.image.url %>" class="card-img-top" alt="listings-img" style="height: 20rem;">
+                <div class="card-body">
+                    <p class="card-text">
+                        <b><%= find.title %></b> <br>
+                        &#8377;<%= find.price%>/Night
+                    </p>
+                </div>
+            </div>
+        </a>
+    <% } %>
+</div>
