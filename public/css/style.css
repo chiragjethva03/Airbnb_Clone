@@ -196,3 +196,17 @@ footer .f-info-links a:hover{
         height: 350px;
     }
 }
+
+#About-card{
+    width: 80% !important;
+    padding: 3rem !important;
+    margin: auto !important;
+    margin-top: 5rem !important;
+    background-color: #fe424d;
+    color: white;
+    border-radius: 12px;
+}
+#About-title{
+    text-align: center !important;
+    margin: 0 0 1rem 0 !important;
+}

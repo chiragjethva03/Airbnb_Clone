@@ -63,10 +63,7 @@ const sessionOption = {
         httpOnly: true
     }
 }
-// root routes
-// app.get("/", (req, res) => {
-//     res.send("working properlly...");
-// });
+
 
 //for the cookie passing
 app.use(session(sessionOption));
@@ -90,6 +87,11 @@ app.use((req, res, next) => {
 app.use("/listings", listingsRouter);
 app.use("/listings/:id/reviews", reviewsRouter);
 app.use("/", userRouter);
+
+// root routes
+app.get("/", (req, res) => {
+    res.render("./listings/root.ejs");
+});
 
 app.all("*", (req, res, next) => {
     next(new ExpressErr(404, "Page Not Found.!"))
