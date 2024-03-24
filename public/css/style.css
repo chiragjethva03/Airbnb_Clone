@@ -161,6 +161,9 @@ footer .f-info-links a:hover{
     padding: 2rem;
     margin-left: 2.5rem;
 }
+#font-size{
+    font-size: 1rem;
+}
 
 /*for the navbar impliment search UI*/
 #btn-search{
@@ -196,8 +199,13 @@ footer .f-info-links a:hover{
         height: 350px;
     }
     .card img{
-        width: 90% !important;
+        width: 78% !important;
     }
+    .tax-switch{
+        margin-left: 0rem !important;
+        font-size: 0.9rem;
+    }
+    
 }
 
 #About-card{
