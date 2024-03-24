@@ -195,6 +195,9 @@ footer .f-info-links a:hover{
         width: 100%;
         height: 350px;
     }
+    .card img{
+        width: 90% !important;
+    }
 }
 
 #About-card{
