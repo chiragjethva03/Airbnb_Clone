@@ -93,10 +93,6 @@ app.get("/", (req, res) => {
     res.render("./listings/root.ejs");
 });
 
-app.all("*", (req, res, next) => {
-    next(new ExpressErr(404, "Page Not Found.!"))
-})
-
 
 app.use((err, req, res, next) => {
     let { statusCode = 500, message = "something went to wrong" } = err;
